@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="AllTests" verbose="1">
+    <parameter name="username" value="test"/>
+    <parameter name="password" value="Testpass1@"/>
+
+    <test name="Log in and out">
+        <classes>
+            <class name="com.demoqa.LoginSignOffTest"/>
+        </classes>
+    </test>
+
+    <test name="Upload">
+        <classes>
+            <class name="com.demoqa.UploadTest"/>
+        </classes>
+    </test>
+
+    <test name="Checkbox">
+        <classes>
+            <class name="com.demoqa.CheckboxTest"/>
+        </classes>
+    </test>
+
+</suite>
